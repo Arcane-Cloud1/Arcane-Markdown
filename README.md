@@ -1,5 +1,7 @@
 # Arcane Markdown
 
+English | [简体中文](./README_zh.md)
+
 A powerful, block-based Markdown editor built for the modern web.
 
 ## Features
