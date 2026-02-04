@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Markdown - 拒绝平庸</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/config.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body class="bg-void text-white font-display overflow-x-hidden selection:bg-acid selection:text-void">
+
+    <div class="bg-noise"></div>
+
+    <nav class="fixed w-full z-40 top-0 left-0 p-6 mix-blend-difference">
+        <div class="flex justify-between items-start">
+            <h1 class="text-4xl font-bold tracking-tighter hover:text-acid cursor-pointer transition-colors">
+                ARCANE.
+            </h1>
+            <div class="flex gap-4">
+                <a href="../en/" class="text-sm underline decoration-acid decoration-2 underline-offset-4 hover:bg-acid hover:text-void px-2 py-1 transition-all">
+                    EN
+                </a>
+                <a href="https://github.com/Arcane-Cloud/Arcane-Markdown" target="_blank" class="text-sm underline decoration-acid decoration-2 underline-offset-4 hover:bg-acid hover:text-void px-2 py-1 transition-all">
+                    GITHUB_REPO ↗
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative z-10 min-h-screen flex flex-col justify-center px-4 md:px-12 lg:px-24 pt-20">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-7 md:mt-24 relative">
+                <div class="absolute -top-12 -left-8 text-dust opacity-20 text-9xl font-bold select-none -z-10">
+                    WRITE
+                </div>
+                <h2 class="text-6xl md:text-8xl font-bold leading-none mb-6">
+                    <span class="text-acid">拒绝</span> <br>
+                    平庸文档。
+                </h2>
+                <p class="text-xl md:text-2xl text-dust max-w-md mb-8 font-hand tracking-wide">
+                    写个文档而已，别搞得像填税单。
+                </p>
+                <div class="flex gap-4 items-center">
+                    <button class="bg-acid text-void px-8 py-4 font-bold text-lg hover-snap hover:translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_#fff]">
+                        开始胡搞
+                    </button>
+                    <span class="text-sm text-dust animate-pulse">-> v1.0.0 已发布</span>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 relative group">
+                <div class="absolute inset-0 bg-danger opacity-0 group-hover:opacity-20 transition-opacity duration-300 -z-10 translate-x-4 translate-y-4 border border-danger"></div>
+                <img src="https://picsum.photos/600/800?grayscale" alt="Abstract Chaos" class="w-full h-[60vh] object-cover grayscale contrast-125 border-2 border-white/10 group-hover:grayscale-0 transition-all duration-500">
+                
+                <div class="absolute -bottom-8 -left-12 bg-void border border-white/20 p-4 rotate-3 shadow-2xl">
+                    <span class="iconify text-4xl text-acid" data-icon="carbon:code"></span>
+                    <p class="text-xs mt-2 font-mono">NO_JUNK_CODE</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-32 px-4 md:px-12 bg-[#0f0f0f] relative overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-px h-full bg-white/5"></div>
+        <div class="absolute top-0 right-1/3 w-px h-full bg-white/5"></div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 items-center">
+            <div class="md:col-span-4 md:col-start-2 text-right md:text-left">
+                <span class="text-danger font-mono text-sm mb-2 block">01. BLOCKS</span>
+                <h3 class="text-5xl font-bold mb-4">像搭积木。</h3>
+                <p class="text-dust text-lg leading-relaxed">
+                    拖这里，拽那里。<br>
+                    不用学什么复杂的语法。<br>
+                    闭着眼都能排版。
+                </p>
+            </div>
+            <div class="md:col-span-6 md:col-start-7">
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-acid/20 blur-xl"></div>
+                    <img src="https://picsum.photos/800/500?random=2" class="relative w-full border border-white/10 grayscale hover:grayscale-0 transition-all duration-500">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 items-center">
+            <div class="md:col-span-5 md:col-start-2 order-2 md:order-1 relative">
+                <div class="border-2 border-dashed border-dust p-8 rotate-1 hover:rotate-0 transition-transform duration-300">
+                    <span class="iconify text-8xl text-white mb-4" data-icon="carbon:rocket"></span>
+                    <div class="font-mono text-xs text-acid">SPEED_MATTERS</div>
+                </div>
+            </div>
+            <div class="md:col-span-4 md:col-start-8 order-1 md:order-2">
+                <span class="text-acid font-mono text-sm mb-2 block">02. PERFORMANCE</span>
+                <h3 class="text-5xl font-bold mb-4">快得离谱。</h3>
+                <p class="text-dust text-lg leading-relaxed">
+                    没有加载条。<br>
+                    没有转圈圈。<br>
+                    眨眼就完事了。
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center mt-48 relative">
+            <h3 class="text-6xl md:text-9xl font-bold opacity-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full select-none">
+                EXPORT
+            </h3>
+            <div class="relative z-10">
+                <h4 class="text-4xl font-bold mb-8">数据归你管。</h4>
+                <p class="text-xl text-dust mb-12">
+                    一键导出 Markdown。<br>
+                    不绑架，不废话。<br>
+                    想走随时走。
+                </p>
+                <div class="flex justify-center gap-8">
+                    <div class="flex flex-col items-center gap-2 group cursor-pointer">
+                        <div class="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center group-hover:bg-acid group-hover:text-void transition-colors">
+                            <span class="iconify text-2xl" data-icon="carbon:document-export"></span>
+                        </div>
+                        <span class="text-xs font-mono">.MD</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 group cursor-pointer">
+                        <div class="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center group-hover:bg-danger group-hover:text-white transition-colors">
+                            <span class="iconify text-2xl" data-icon="carbon:pdf"></span>
+                        </div>
+                        <span class="text-xs font-mono">.PDF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-acid text-void py-24 px-4 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-end gap-12">
+            <div>
+                <h2 class="text-7xl md:text-9xl font-bold tracking-tighter mb-4">
+                    搞起？
+                </h2>
+                <p class="text-xl font-bold opacity-80 max-w-sm">
+                    既然都看到这了，<br>
+                    不如试一试。
+                </p>
+            </div>
+            
+            <div class="flex flex-col items-end gap-4">
+                <a href="/editor" class="bg-void text-white px-12 py-6 text-xl font-bold hover:scale-105 transition-transform shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)]">
+                    进入编辑器
+                </a>
+                <p class="text-sm font-mono mt-4 opacity-60">
+                    &copy; 2026 Arcane Markdown. <br>
+                    Designed with pure chaos.
+                </p>
+            </div>
+        </div>
+        
+        <span class="iconify absolute -bottom-20 -right-20 text-[20rem] opacity-10 rotate-12" data-icon="carbon:code"></span>
+    </footer>
+
+</body>
+</html>
