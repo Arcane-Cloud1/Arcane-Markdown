@@ -21,8 +21,8 @@ export interface Translations {
     exportSuccess: string;
     componentLibrary: string;
     defaultContent: {
-        welcome: string;
-        startEditing: string;
+      welcome: string;
+      startEditing: string;
     };
     modules: {
       basics: string;
@@ -65,9 +65,9 @@ export interface Translations {
       callout: string;
     };
     buttons: {
-        addRow: string;
-        addCol: string;
-        deleteLastCol: string;
+      addRow: string;
+      addCol: string;
+      deleteLastCol: string;
     };
     toolbar: {
       bold: string;

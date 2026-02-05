@@ -1,16 +1,32 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { useI18n } from "@/lib/i18n/I18nContext";
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Search } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { useI18n } from '@/lib/i18n/I18nContext';
 
 const POPULAR_LANGUAGES = [
-  "javascript", "typescript", "python", "java", "c++", "c#",
-  "go", "rust", "php", "ruby", "swift", "kotlin",
-  "html", "css", "sql", "bash", "json", "yaml", "markdown"
+  'javascript',
+  'typescript',
+  'python',
+  'java',
+  'c++',
+  'c#',
+  'go',
+  'rust',
+  'php',
+  'ruby',
+  'swift',
+  'kotlin',
+  'html',
+  'css',
+  'sql',
+  'bash',
+  'json',
+  'yaml',
+  'markdown',
 ];
 
 interface LanguageSelectorProps {
@@ -21,10 +37,10 @@ interface LanguageSelectorProps {
 
 export function LanguageSelector({ open, onOpenChange, onSelect }: LanguageSelectorProps) {
   const { t } = useI18n();
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
 
-  const filteredLanguages = POPULAR_LANGUAGES.filter(lang => 
-    lang.toLowerCase().includes(search.toLowerCase())
+  const filteredLanguages = POPULAR_LANGUAGES.filter((lang) =>
+    lang.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
@@ -35,7 +51,7 @@ export function LanguageSelector({ open, onOpenChange, onSelect }: LanguageSelec
         </DialogHeader>
         <div className="space-y-4">
           <div className="relative">
-            <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="text-muted-foreground absolute top-2.5 left-2 h-4 w-4" />
             <Input
               placeholder={t.editor.languageSelector.placeholder}
               value={search}
@@ -43,7 +59,7 @@ export function LanguageSelector({ open, onOpenChange, onSelect }: LanguageSelec
               className="pl-8"
             />
           </div>
-          <div className="grid grid-cols-3 gap-2 max-h-[300px] overflow-y-auto p-1">
+          <div className="grid max-h-[300px] grid-cols-3 gap-2 overflow-y-auto p-1">
             {filteredLanguages.map((lang) => (
               <Button
                 key={lang}
@@ -52,23 +68,27 @@ export function LanguageSelector({ open, onOpenChange, onSelect }: LanguageSelec
                 onClick={() => {
                   onSelect(lang);
                   onOpenChange(false);
-                  setSearch(""); // Reset search
+                  setSearch(''); // Reset search
                 }}
               >
                 {lang}
               </Button>
             ))}
             {filteredLanguages.length === 0 && (
-                 <div className="col-span-3 text-center py-4 text-muted-foreground">
-                    {t.editor.languageSelector.notFound}
-                    <Button variant="link" className="p-0 h-auto" onClick={() => {
-                        onSelect(search);
-                        onOpenChange(false);
-                        setSearch("");
-                    }}>
-                        {t.editor.languageSelector.use} "{search}"
-                    </Button>
-                 </div>
+              <div className="text-muted-foreground col-span-3 py-4 text-center">
+                {t.editor.languageSelector.notFound}
+                <Button
+                  variant="link"
+                  className="h-auto p-0"
+                  onClick={() => {
+                    onSelect(search);
+                    onOpenChange(false);
+                    setSearch('');
+                  }}
+                >
+                  {t.editor.languageSelector.use} &quot;{search}&quot;
+                </Button>
+              </div>
             )}
           </div>
         </div>

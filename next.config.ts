@@ -1,16 +1,12 @@
-// next.config.js
-import path from "path";
-import dotenv from "dotenv";
+import type { NextConfig } from 'next';
 
-// Load environment variables from the root directory
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactCompiler: true,
   output: 'export',
-  assetPrefix: './',
+  images: {
+    unoptimized: true, // Required for static export
+  },
+  // assetPrefix: './', // Often causes issues with client-side routing. Use basePath if deploying to subdirectory.
 };
 
-// 只使用 module.exports（因为是 .js 文件）
-module.exports = nextConfig;
+export default nextConfig;

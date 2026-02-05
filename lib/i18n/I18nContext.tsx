@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Locale, Translations } from './types';
@@ -27,9 +27,9 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     if (savedLocale && (savedLocale === 'zh' || savedLocale === 'en')) {
       setLocaleState(savedLocale);
     } else {
-        // Detect browser language
-        const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
-        setLocaleState(browserLang);
+      // Detect browser language
+      const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
+      setLocaleState(browserLang);
     }
   }, []);
 

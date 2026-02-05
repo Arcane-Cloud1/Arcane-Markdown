@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Toaster } from "sonner";
-import { I18nProvider } from "@/lib/i18n/I18nContext";
+import type { Metadata } from 'next';
+import './globals.css';
+import { Toaster } from 'sonner';
+import { I18nProvider } from '@/lib/i18n/I18nContext';
 
 export const metadata: Metadata = {
-  title: "Arcane Markdown",
-  description: "A powerful block-based Markdown editor",
+  title: 'Arcane Markdown',
+  description: 'A powerful block-based Markdown editor',
 };
 
 export default function RootLayout({
@@ -24,8 +24,8 @@ export default function RootLayout({
         }}
       >
         <I18nProvider>
-            <main className="min-h-screen bg-gray-50">{children}</main>
-            <Toaster position="top-right" richColors />
+          <main className="min-h-screen bg-gray-50">{children}</main>
+          <Toaster position="top-right" richColors />
         </I18nProvider>
       </body>
     </html>

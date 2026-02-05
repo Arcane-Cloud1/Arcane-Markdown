@@ -22,11 +22,13 @@
 ## 快速开始
 
 1. **安装依赖：**
+
    ```bash
    npm install
    ```
 
 2. **启动开发服务器：**
+
    ```bash
    npm run dev
    ```
@@ -42,3 +44,22 @@
 - [Shadcn UI](https://ui.shadcn.com/)
 - [Lucide React](https://lucide.dev/)
 - [PrismJS](https://prismjs.com/)
+
+## 📚 文档
+
+- [API 文档](./docs/API_zh.md)
+
+## 🤝 贡献
+
+欢迎贡献代码！请查看我们的 [贡献指南](docs/CONTRIBUTING.md) 了解详情。
+
+1. Fork 本项目
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的改动 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启一个 Pull Request
+
+## 📄 许可证
+
+本项目基于 MIT 许可证开源。
+

@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { ArcaneEditor } from "@/components/ArcaneEditor";
+import { ArcaneEditor } from '@/components/ArcaneEditor';
 
 export default function ArcaneEditorPage() {
   return (

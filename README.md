@@ -1,13 +1,22 @@
 # Arcane Markdown
 
-English | [简体中文](./README_zh.md)
+<div align="center">
 
-A powerful, block-based Markdown editor built for the modern web.
+![Arcane Markdown](./public/favicon.ico)
 
-## Features
+**A powerful, block-based Markdown editor built for the modern web.**
+
+[English](./README.md) | [简体中文](./README_zh.md)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/your-username/arcane-markdown/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/arcane-markdown/actions/workflows/ci.yml)
+
+</div>
+
+## ✨ Features
 
 - **Block-Based Editing**: Intuitive drag-and-drop interface for organizing content.
-- **Rich Content Support**: 
+- **Rich Content Support**:
   - Headings, Paragraphs, Quotes
   - Lists (Ordered, Unordered, Checklist) with smart grouping
   - Code Blocks with syntax highlighting (PrismJS) and auto-indentation
@@ -17,27 +26,80 @@ A powerful, block-based Markdown editor built for the modern web.
   - Callouts (Info, Warning, Success, Error)
 - **Real-time Preview**: What you see is what you get.
 - **Export**: One-click export to standard `.md` files.
+- **Internationalization**: English and Chinese support.
 
-## Getting Started
+## 🛠 Tech Stack
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Markdown Processing**: [React Markdown](https://github.com/remarkjs/react-markdown) & [Remark GFM](https://github.com/remarkjs/remark-gfm)
+- **Syntax Highlighting**: [PrismJS](https://prismjs.com/)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
 
-2. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+## 🚀 Getting Started
 
-3. **Open the application:**
-   Visit [http://localhost:3000](http://localhost:3000) in your browser.
+### Prerequisites
 
-## Tech Stack
+- Node.js 18+
+- npm or pnpm
 
-- [Next.js](https://nextjs.org/) (App Router)
-- [React](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn UI](https://ui.shadcn.com/)
-- [Lucide React](https://lucide.dev/)
-- [PrismJS](https://prismjs.com/)
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/arcane-markdown.git
+    cd arcane-markdown
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Configure environment variables:**
+    Copy `.env.example` to `.env`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+4.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+5.  **Open the application:**
+    Visit [http://localhost:3001](http://localhost:3001) in your browser.
+
+## 📦 Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+This project uses Next.js static export (`output: 'export'`), so the build output will be in the `out/` directory, ready for deployment to GitHub Pages, Vercel, or any static hosting service.
+
+## 📚 Documentation
+- [API Documentation](./docs/API.md)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check our [Contributing Guide](docs/CONTRIBUTING.md) for details.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
