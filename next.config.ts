@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  // assetPrefix: './', // Often causes issues with client-side routing. Use basePath if deploying to subdirectory.
+  assetPrefix: './', // Enable relative paths for static export compatibility
 };
 
 export default nextConfig;

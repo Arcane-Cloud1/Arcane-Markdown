@@ -34,9 +34,24 @@
    ```
 
 3. **打开应用：**
-   在浏览器中访问 [http://localhost:3000](http://localhost:3000)。
+   在浏览器中访问 [http://localhost:3001](http://localhost:3001)。
 
-## 技术栈
+## 📦 构建生产版本
+
+创建生产构建：
+
+```bash
+npm run build
+```
+
+本项目使用 Next.js 静态导出（`output: 'export'`）并配置了相对路径，因此构建输出将位于 `out/` 目录中。
+
+构建完成后，你可以：
+1.  运行 `npm run preview` 启动本地服务器（推荐）。
+2.  或者双击 `preview.bat` (Windows)。
+3.  **技术上**，你也可以直接在浏览器中打开 `out/index.html`，因为我们已经启用了相对路径（`assetPrefix: './'`）。但是，某些高级路由功能可能仍需要服务器支持。
+
+## 🛠 技术栈
 
 - [Next.js](https://nextjs.org/) (App Router)
 - [React](https://react.dev/)
@@ -51,7 +66,7 @@
 
 ## 🤝 贡献
 
-欢迎贡献代码！请查看我们的 [贡献指南](./CONTRIBUTING.md) 了解详情。
+欢迎贡献代码！请查看我们的 [贡献指南](docs/CONTRIBUTING.md) 了解详情。
 
 1. Fork 本项目
 2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)

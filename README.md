@@ -85,7 +85,12 @@ To create a production build:
 npm run build
 ```
 
-This project uses Next.js static export (`output: 'export'`), so the build output will be in the `out/` directory, ready for deployment to GitHub Pages, Vercel, or any static hosting service.
+This project uses Next.js static export (`output: 'export'`) with relative paths configured, so the build output will be in the `out/` directory.
+
+You can now:
+1.  Run `npm run preview` to start a local server (Recommended).
+2.  Or double-click `preview.bat` (Windows).
+3.  **Technically**, you can also open `out/index.html` directly in your browser, as we have enabled relative paths (`assetPrefix: './'`). However, some advanced routing features might still require a server.
 
 ## 📚 Documentation
 - [API Documentation](./docs/API.md)
